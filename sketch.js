@@ -1,4 +1,4 @@
-let canw = 700; let canh = 700;
+let canw = 800; let canh = 800;
 
 function setup() {
     createCanvas(canh, canw)
