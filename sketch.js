@@ -10,8 +10,10 @@ function draw() {
     let min = 0;
     translate(canw/2,canh/2)
     for(; r > min; r-=0.5) {
-        fill(r/1.5,r/1.5,r*5)
-        ellipse(cos(r*frameCount)*r, sin(r*frameCount)*r, sqrt(r), sqrt(r))
+        let x =cos(r*frameCount)*r;
+        let y =sin(r*frameCount)*r;
+        fill(r/1.5*x,r/1.5,r*5)
+        ellipse(x, y, sqrt(r), sqrt(r))
     }
     r = base;
 }
